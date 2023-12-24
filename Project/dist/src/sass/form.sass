@@ -1,0 +1,223 @@
+body, html
+    width: 100%
+*
+    box-sizing: border-box
+body
+    font-family: Merriweather
+    background-color: #305876
+@font-face
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 400
+    src: url("/src/fonts/woff/merriweather-italic-webfont.woff2")
+@font-face
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 700
+    src: url("/src/fonts/woff/merriweather-italic-webfont.woff2")
+.margin-header
+    margin-top: 6px
+.header
+    margin-bottom: 10px
+    width: 100%
+    height: 200px
+    background: radial-gradient(127.2% 110.51% at 49.41% 0%, #102B3E 0%, #302CA3 100%)
+.header-flex
+    margin: 0 10%
+    display: flex
+    justify-content: space-evenly
+.text-header
+    font-style: italic
+    font-weight: 700
+    line-height: normal
+    color: #6964E2
+    &:first-child
+        margin-bottom: 14px
+    &__main
+        font-size: 20px
+    &__second
+        font-size: 15px
+        font-weight: 400
+    &__layout
+        width: 252px
+        height: 69px
+.tel-button-header
+    border-radius: 5px
+    background: #6964E2
+    border: none
+    padding: 0
+    &:first-child
+        margin-bottom: 14px
+    &__layout
+        width: 300px
+        height: 69px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: none
+.button-contact-header
+    border-radius: 15px
+    background: #6964E2
+    border: none
+    padding: 0
+    font-size: 20px
+    &:first-child
+        margin-bottom: 14px
+    &__layout
+        width: 225px
+        height: 33px
+.header-number-size
+    font-size: 28px
+    font-family: Roboto
+    width: 255px
+    height: 40px
+.header-footer-hr
+    height: 3px
+    background: rgba(0, 0, 0, 0.30)
+    border: none
+    margin-top: 6px
+.banner-section-hr
+    width: 91vw
+    height: 5px
+    background: #6964E2
+    border: none
+.info-text
+    width: 70vw
+    text-align: center
+    margin: auto
+    margin-bottom: 20px
+    font-size: 32px
+    &__style
+        color: #fff
+.form-section
+    margin: auto
+    background: rgba(126, 15, 193, 35%)
+    height: 558px
+    width: 83.5vw
+    &__flex
+        display: flex
+        flex-direction: column
+input, label
+    width: 70vw
+    margin: auto
+input
+    margin-bottom: 20px
+    height: 65px
+    background: #939393
+    &:last-of-type
+        margin-bottom: 70px
+label
+    color: #fff
+    &:first-of-type
+        margin-top: 15px
+.button-section
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    width: 70vw
+    margin: auto
+.button-style
+    color: #fff
+    border-radius: 30px
+    background: #3C4AC7
+    height: 86px
+    width: 18vw
+    border: none
+    font-size: 32px
+    &__submit
+        height: 121px
+        font-size: 48px
+        width: 29vw
+@media screen and (max-width: 1100px)
+    .tel-button-header
+        &__layout
+            width: 170px
+    .header-number-size
+        font-size: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+    .text-header
+        &__layout
+            width: 174px
+        &__main
+            font-size: 14px
+        &__second
+            font-size: 12px
+    .button-style
+        font-size: 24px
+        &__submit
+            font-size: 32px
+@media screen and (max-width: 768px)
+    .tel-button-header
+        &__layout
+            width: 145px
+            height: 69px
+            padding: 0
+    .number-width-header
+        width: 25px
+    .header-number-size
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 145px
+        height: 30px
+        font-size: 14px
+    .margin-header
+        width: 239px
+    .header-footer-hr
+        display: none
+    .button-section
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        width: 70vw
+        margin: auto
+    .button-style
+        color: #fff
+        border-radius: 30px
+        background: #3C4AC7
+        height: 86px
+        width: 17vw
+        border: none
+        font-size: 16px
+        &__submit
+            height: 86px
+            font-size: 24px
+            width: 26vw
+@media screen and (max-width: 575px)
+    .tel-button-header
+        &__layout
+            &:first-child
+                margin: 0
+    .header
+        height: 500px
+    .form-section
+        height: 800px
+    .header-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+    .margin-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 65vw
+    .text-header
+        display: flex
+        text-align: center
+        align-items: center
+        margin-bottom: 25px
+    .header-footer-hr
+        display: none
+    .button-style
+        height: 86px
+        width: 50vw
+        font-size: 24px
+        &__submit
+            height: 150px
+            font-size: 32px
+    .button-section
+        flex-direction: column
+        align-items: center
+        height: 350px

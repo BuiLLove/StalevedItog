@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Форма "Сталеведъ"</title>
+</head>
+
+<body>
+    <div class="header">
+        <header class="header-flex">
+            <a href="index.html"><img src="/src/icons/logo.svg" alt="Logo" class="margin-header"></a>
+            <div class="margin-header">
+                <p class="text-header text-header__main text-header__layout">Производитель лифтового оборудования и
+                    комплектующих</p>
+                <p class="text-header text-header__layout text-header__second">Работаем по всей России и СНГ</p>
+            </div>
+            <div class="margin-header button-contact-header__layout">
+                <button class="tel-button-header tel-button-header__layout">
+                    <img src="/src/icons/PhoneIcon.svg" alt="telephone" class="number-width-header">
+                    <span class="header-number-size">+7 499 322-77-97</span>
+                </button>
+            </div>
+        </header>
+        <hr class="header-footer-hr">
+    </div>
+    <div class="info-text">
+        <p class="info-text__style">Заполните форму, чтобы связаться с нами!</p>
+    </div>
+    <div class="form-section">
+        <form action="#" method="post" class="form-section__flex">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="student_name">
+
+            <label for="second-name">Фамилия</label>
+            <input type="text" id="mail" name="student_email">
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="password" name="student_password">
+            <div class="button-section">
+                <button type="submit" class="button-style button-style__submit">Связаться</button>
+                <a href="index.html"><button type="button" class="button-style">На главную</button></a>
+                <button type="reset" class="button-style">Очистить</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
